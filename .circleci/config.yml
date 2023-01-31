@@ -16,19 +16,19 @@ jobs:
           name: Install Backend dependencies
           command: npm run api:install
       - run:
-          name: Backend Build
+          name: Backend Build ## builds the backend production code
           command: npm run api:build
       - run:
-          name: Install Frontend dependencies
+          name: Install Frontend dependencies 
           command: npm run frontend:install
       - run:
-          name: Frontend Build
+          name: Frontend Build ## builds the frontend production code
           command: npm run frontend:build
       - run:
-          name: Backend Deploy
+          name: Backend Deploy ##adds the secrets to eb through eb cli using deploy.sh in bin folder
           command: npm run api:deploy
       - run:
-          name: Frontend Deploy
+          name: Frontend Deploy ## uploads media files to the s3 bucket
           command: npm run frontend:deploy
 
 workflows:
