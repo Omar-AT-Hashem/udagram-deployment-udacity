@@ -14,10 +14,10 @@ jobs:
       - eb/setup
       - run:
           name: Install Backend dependencies
-          command: npm run backend:install
+          command: npm run api:install
       - run:
           name: Backend Build
-          command: npm run backend:build
+          command: npm run api:build
       - run:
           name: Install Frontend dependencies
           command: npm run frontend:install
@@ -26,7 +26,7 @@ jobs:
           command: npm run frontend:build
       - run:
           name: Backend Deploy
-          command: npm run backend:deploy
+          command: npm run api:deploy
       - run:
           name: Frontend Deploy
           command: npm run frontend:deploy
