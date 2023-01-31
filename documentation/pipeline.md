@@ -4,16 +4,16 @@
 
 ### Steps
 
---Developer update the code localy [ add new feature, fix a bug, ...etc ]
---Push the changes to the github repo
---Circle Ci will trigger this changes and will start the pipeline
--Install Node
--Install AWS Elastic Beanstalk
--Install AWS CLI
--install Front-End Dependencies
--Install API Dependencies
--Build Front-End
--Build API
---Wait for the user's approval to deploy the application
--Update API code in Elastic Beanstalk ( Deploy The API )
--Update Front-End code in S3 Bucket ( Deploy The Front-End )
+--Developer update the code localy [ add new feature, fix a bug, ...etc ]<br>
+--Push the changes to the github repo<br>
+--Circle Ci will trigger this changes and will start the pipeline<br>
+-Install Node<br>
+-Install AWS Elastic Beanstalk<br>
+-Install AWS CLI<br>
+-install Front-End Dependencies<br>
+-Install API Dependencies<br>
+-Build Front-End<br>
+-Build API<br>
+--Wait for the user's approval to deploy the application<br>
+-Update API code in Elastic Beanstalk ( Deploy The API )<br>
+-Update Front-End code in S3 Bucket ( Deploy The Front-End )<br>
